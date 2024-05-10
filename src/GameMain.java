@@ -15,14 +15,14 @@ public class GameMain extends JPanel implements MouseListener {
 
     // Constants for dimensions used for drawing
     // cell width and height
-    public static final int CELL_SIZE = 100;
+    public static final int CELL_SIZE = 120;
     // drawing canvas
     public static final int CANVAS_WIDTH = CELL_SIZE * COLS;
     public static final int CANVAS_HEIGHT = CELL_SIZE * ROWS;
     // Noughts and Crosses are displayed inside a cell, with padding from border
-    public static final int CELL_PADDING = CELL_SIZE / 6;
-    public static final int SYMBOL_SIZE = CELL_SIZE - CELL_PADDING * 2;
-    public static final int SYMBOL_STROKE_WIDTH = 8;
+    public static final int CELL_PADDING = CELL_SIZE / 10;
+    public static final int SYMBOL_SIZE = CELL_SIZE - CELL_PADDING * 4;
+    public static final int SYMBOL_STROKE_WIDTH = 10;
 
     /* declare game object variables */
     // the game board
@@ -52,7 +52,7 @@ public class GameMain extends JPanel implements MouseListener {
         statusBar.setFont(new Font(Font.DIALOG_INPUT, Font.BOLD, 14));
         statusBar.setBorder(BorderFactory.createEmptyBorder(2, 5, 4, 5));
         statusBar.setOpaque(true);
-        statusBar.setBackground(Color.LIGHT_GRAY);
+        statusBar.setBackground(Color.GREEN);
 
         // Layout of the panel is in border layout
         setLayout(new BorderLayout());

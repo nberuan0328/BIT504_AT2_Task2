@@ -22,7 +22,7 @@ public class Cell {
     /** Paint the cell with appropriate content */
     public void paint(Graphics g) {
         // Draw the cell border
-        g.setColor(Color.BLACK);
+        g.setColor(Color.GREEN);
         g.drawRect(col * GameMain.CELL_SIZE, row * GameMain.CELL_SIZE, GameMain.CELL_SIZE, GameMain.CELL_SIZE);
 
         // Draw the symbol (X or O) if not empty
@@ -30,10 +30,14 @@ public class Cell {
         int y1 = row * GameMain.CELL_SIZE + GameMain.CELL_PADDING;
         if (content == Player.Cross) {
             g.setColor(Color.RED);
+            Font font = new Font("Arial", Font.BOLD, 50);
+			g.setFont(font);
             g.drawLine(x1, y1, x1 + GameMain.SYMBOL_SIZE, y1 + GameMain.SYMBOL_SIZE);
             g.drawLine(x1 + GameMain.SYMBOL_SIZE, y1, x1, y1 + GameMain.SYMBOL_SIZE);
         } else if (content == Player.Nought) {
             g.setColor(Color.BLUE);
+            Font font = new Font("Arial", Font.BOLD, 50);
+			g.setFont(font);
             g.drawOval(x1, y1, GameMain.SYMBOL_SIZE, GameMain.SYMBOL_SIZE);
         }
     }
