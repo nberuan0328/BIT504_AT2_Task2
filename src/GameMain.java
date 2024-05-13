@@ -21,8 +21,8 @@ public class GameMain extends JPanel implements MouseListener {
     public static final int CANVAS_HEIGHT = CELL_SIZE * ROWS;
     // Noughts and Crosses are displayed inside a cell, with padding from border
     public static final int CELL_PADDING = CELL_SIZE / 10;
-    public static final int SYMBOL_SIZE = CELL_SIZE - CELL_PADDING * 4;
-    public static final int SYMBOL_STROKE_WIDTH = 10;
+    public static final int SYMBOL_SIZE = CELL_SIZE - CELL_PADDING * 3;
+    public static final int SYMBOL_STROKE_WIDTH = 8;
 
     /* declare game object variables */
     // the game board
